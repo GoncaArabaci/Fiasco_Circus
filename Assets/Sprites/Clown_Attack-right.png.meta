@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19611c1218658a84eb8ed2c6469671e7
+guid: ed36e658272062b4991cae50cd01a4c4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Clown_Attack-right_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 12
+        width: 44
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1291bfd4db27d4449dbef29e2fe7f35
+      internalID: 901806103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clown_Attack-right_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 12
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7338d2c19b55aca4e8caa481f74a3968
+      internalID: -2064520309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clown_Attack-right_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 12
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b709d753ea25ddd4ca4d9cc50c98ebfd
+      internalID: 1085462141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clown_Attack-right_3
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 12
+        width: 55
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18afb099c7505304ab0bed59448f3dc5
+      internalID: 460735263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clown_Attack-right_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 12
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778d06cc54d6fb64c8f57c6883c648c9
+      internalID: -1285549430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Clown_Attack-right_0: 901806103
+      Clown_Attack-right_1: -2064520309
+      Clown_Attack-right_2: 1085462141
+      Clown_Attack-right_3: 460735263
+      Clown_Attack-right_4: -1285549430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

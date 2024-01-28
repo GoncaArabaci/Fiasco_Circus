@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
     private Transform player;
     private int hitsTakenByPlayer = 0;
 
+    public int health = 5;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag(playerTag)?.transform;
@@ -40,14 +42,14 @@ public class EnemyController : MonoBehaviour
 
         if (collision2D.collider.CompareTag(playerTag))
         {
-            TakeDamage();
+            Damage();
             
         }
         
 
     }
 
-    void TakeDamage()
+    void Damage()
     {
         hitsTakenByPlayer++;
 
@@ -69,8 +71,20 @@ public class EnemyController : MonoBehaviour
         player.gameObject.SetActive(false);
     }
 
-    
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Died();
+        }
+    }
 
+    public void Died()
+    {
+        Debug.Log("EnemyDied");
+        Destroy(gameObject);
+    }
    
 
    
