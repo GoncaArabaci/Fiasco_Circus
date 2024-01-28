@@ -14,8 +14,14 @@ public class PlayerMovement : MonoBehaviour
     private KeyCode dashKey = KeyCode.Space; // The key to press for dashing
 
     private Vector3 movement;
-
     public Animator animator;
+    public Animator front;
+    public Animator back;
+    public Animator left;
+    public Animator right;
+
+
+
     private Rigidbody2D rb;
 
     private void Awake()
@@ -32,9 +38,12 @@ public class PlayerMovement : MonoBehaviour
         // Move the player
         movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f) * moveSpeed * Time.deltaTime;
 
-        //animator.SetFloat("Horizontal", movement.x);
-        //animator.SetFloat("Vertical", movement.y);
-        //animator.SetFloat("Speed", movement.magnitude);
+        right.SetFloat("Horizontal", movement.x);
+        back.SetFloat("Vertical", movement.y);
+        left.SetFloat("Horizontal", -(movement.x));
+        front.SetFloat("Vertical", -(movement.y));
+
+        animator.SetFloat("Speed", movement.magnitude);
 
         transform.position += movement;
         // Check if the dash key is pressed and the character is not already dashing

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class EnemyController : MonoBehaviour
 {
@@ -68,7 +68,8 @@ public class EnemyController : MonoBehaviour
         Debug.Log("Player is dead!");
         // Add any additional logic for player death, such as playing death animation, resetting the level, etc.
         // For simplicity, let's deactivate the player object in this example.
-        player.gameObject.SetActive(false);
+        Destroy(player.gameObject);
+        SceneManager.LoadScene("GameOver");
     }
 
     public void TakeDamage(int damage)

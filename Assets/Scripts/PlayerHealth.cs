@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -20,7 +21,11 @@ public class PlayerHealth : MonoBehaviour
     {
        
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+        if (health <= 0)
+        {
 
+            SceneManager.LoadScene("GameOver");
+        }
     }
     
     
