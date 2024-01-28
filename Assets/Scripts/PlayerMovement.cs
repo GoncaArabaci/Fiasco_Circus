@@ -15,12 +15,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 movement;
 
-    //public Animator animator;
+    public Animator animator;
     private Rigidbody2D rb;
 
     private void Awake()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        //animator = GetComponent<Animator>();
     }
 
 

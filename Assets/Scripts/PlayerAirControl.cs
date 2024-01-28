@@ -8,6 +8,8 @@ public class PlayerAirControl : MonoBehaviour
     public float maxHoldTime = 3f; // Maksimum basýlý tutma süresi
     public float stopDuration = 1f; // Durma süresi
 
+    Animator playerAnimator;
+
     private float holdTime = 0f; // Basýlý tutma süresi ölçümü
     private bool isHolding = false; // Tuþ basýlý mý kontrolü
 
@@ -25,6 +27,7 @@ public class PlayerAirControl : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -64,9 +67,11 @@ public class PlayerAirControl : MonoBehaviour
     {
         currentPlayerState = PlayerState.Stop;
         rb.velocity = Vector2.zero;
+        playerAnimator.SetBool("Fall", true);
         yield return new WaitForSeconds(stopDuration);
         Debug.Log("5tiems");
         currentPlayerState = PlayerState.Moving;
+        playerAnimator.SetBool("Fall", false);
         holdTime = 0f;
         isHolding = false;
     }
