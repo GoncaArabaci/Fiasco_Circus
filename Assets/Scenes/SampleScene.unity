@@ -230,10 +230,6 @@ MonoBehaviour:
   dashDistance: 5
   dashDuration: 1
   animator: {fileID: 0}
-  front: {fileID: 232377321}
-  back: {fileID: 0}
-  left: {fileID: 0}
-  right: {fileID: 0}
 --- !u!50 &232377317
 Rigidbody2D:
   serializedVersion: 4
@@ -564,7 +560,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 12.605299
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -589,7 +585,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7, y: -2.3, z: -10}
+  m_LocalPosition: {x: -2.7, y: -0.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1346,8 +1342,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06801474, y: -0.014469802}
-  m_Size: {x: 0.5012257, y: 0.5012258}
+  m_Offset: {x: -0.0018814802, y: -0.014469813}
+  m_Size: {x: 0.64101815, y: 0.64101815}
   m_Direction: 0
 --- !u!212 &1173032818
 SpriteRenderer:

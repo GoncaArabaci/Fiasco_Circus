@@ -15,10 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 movement;
     public Animator animator;
-    public Animator front;
-    public Animator back;
-    public Animator left;
-    public Animator right;
+    
 
 
 
@@ -38,12 +35,12 @@ public class PlayerMovement : MonoBehaviour
         // Move the player
         movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f) * moveSpeed * Time.deltaTime;
 
-        right.SetFloat("Horizontal", movement.x);
-        back.SetFloat("Vertical", movement.y);
-        left.SetFloat("Horizontal", -(movement.x));
-        front.SetFloat("Vertical", -(movement.y));
 
-        animator.SetFloat("Speed", movement.magnitude);
+        //animator.SetFloat("Horizontal", movement.x);
+        //animator.SetFloat("Vertical", movement.y);
+        
+
+        //animator.SetFloat("Speed", movement.magnitude);
 
         transform.position += movement;
         // Check if the dash key is pressed and the character is not already dashing
